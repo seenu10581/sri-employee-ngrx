@@ -1,0 +1,16 @@
+<div id="container">
+   <div id="content">
+      <div id="div">Employee Add/Edit</div>
+      <div id="div">
+         <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+            <div id="div">Name:  <input type="text" formControlName="name"/></div>
+            <div id="div">Age:&nbsp;&nbsp;&nbsp;&nbsp;  <input type="number" formControlName="age"/></div>
+            <div id="div">Salary:  <input type="number" formControlName="salary"/></div>
+            <div id="div">
+               <button class="btn" (click)="onSubmit()"><span>Save</span></button>&nbsp;
+               <button class="btn" (click)="redirectToViewPage()"><span>Cancel</span></button>
+            </div>
+         </form>  
+      </div>
+   </div>
+</div>

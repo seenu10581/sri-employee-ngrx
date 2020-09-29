@@ -1,0 +1,40 @@
+#container{
+    width: 100%;
+}
+#content {
+    background-color: #e5edf1;
+    color: black;
+    font-weight: normal;
+    padding: 20px;
+    text-align: left;
+    width: 40%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  #div {
+    padding: 5px;
+  }
+
+  /* Style buttons */
+.btn {
+    border-radius: 4px;
+    background-color: #3a3331;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 6px;
+    width: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+    color: #000000;
+    font-weight: bold;  
+  }

@@ -1,0 +1,19 @@
+<div id="container">
+   <div id="content">
+      <ul>
+         <li *ngFor="let employeesdata of employees$ | async; let i = index">
+            <div id="conMainDiv">
+               <div class="name">{{i+1}}. {{employeesdata.name}}</div>
+               <div class="age">{{employeesdata.age}}</div>
+               <div class="salary">{{employeesdata.salary}}</div>
+               <div class="action"> 
+                  <a (click)="deleteEmployee(employeesdata.id, employeesdata.name)" >Delete</a> / <a (click)="editEmployee(employeesdata.id)" >Edit</a> 
+               </div>
+            </div>
+         </li>
+      </ul>         
+      <div>
+         <button class="button" (click)="redirectToAddEmployee()"><span>Add Employee</span></button>
+      </div>      
+   </div>
+</div>
